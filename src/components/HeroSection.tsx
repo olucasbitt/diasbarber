@@ -101,30 +101,29 @@ export default function HeroSection() {
             </ul>
 
             {/* CTA */}
-            <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-5 lg:gap-5 mt-2">
+            <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-5 mt-2">
 
-              <a
-                href="https://wa.me/5551999999999?text=Olá! Quero agendar meu atendimento."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-4 bg-primary text-primary-foreground font-bold rounded-lg 
-                hover:scale-[1.03] transition shadow-lg shadow-primary/30
-                w-full sm:w-auto lg:w-full xl:w-auto"
-              >
-                <MessageCircle className="w-5 h-5" />
-                Agendar pelo WhatsApp
-              </a>
+			  <a
+				href="https://wa.me/5551999999999?text=Olá! Quero agendar meu atendimento."
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label="Agendar atendimento pelo WhatsApp"
+				className="inline-flex items-center justify-center gap-2 px-6 py-4 bg-primary text-primary-foreground font-bold rounded-lg 
+hover:scale-[1.03] transition shadow-lg shadow-primary/30 w-full sm:w-auto lg:w-full xl:w-auto whitespace-nowrap"
+			  >
+				<MessageCircle className="w-5 h-5" />
+				Agendar pelo WhatsApp
+			  </a>
 
-              <a
-                href="#antes-depois"
-                className="inline-flex items-center justify-center px-6 py-4 border border-white/30 text-white font-medium rounded-lg 
-                hover:bg-white/10 transition
-                w-full sm:w-auto lg:w-full xl:w-auto"
-              >
-                Ver resultados
-              </a>
+			  <a
+				href="#antes-depois"
+				className="inline-flex items-center justify-center px-6 py-4 border border-white/30 text-white font-medium rounded-lg 
+				hover:bg-white/10 hover:border-white/50 transition w-full sm:w-auto lg:w-full xl:w-auto"
+			  >
+				Ver resultados
+			  </a>
 
-            </div>
+			</div>
           </div>
 
         </div>
