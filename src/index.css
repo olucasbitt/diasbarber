@@ -1,0 +1,149 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* =========================
+   THEME VARIABLES
+========================= */
+:root {
+  /* Colors */
+  --background: #0D0D0D;
+  --foreground: #FFFFFF;
+
+  --card: #161616;
+  --card-foreground: #FFFFFF;
+
+  --primary: #FF6A00;
+  --primary-foreground: #FFFFFF;
+  --primary-hover: #ff7a1a;
+
+  --secondary: #1A1A1A;
+  --secondary-foreground: #FFFFFF;
+
+  --muted: #1A1A1A;
+  --muted-foreground: #A0A0A0;
+
+  --accent: #FF6A00;
+  --accent-foreground: #FFFFFF;
+
+  --border: #2A2A2A;
+  --ring: #FF6A00;
+
+  --gray-light: #F5F5F5;
+
+  /* Radius */
+  --radius: 0.75rem;
+
+  /* Typography */
+  --font-sans: 'Poppins', system-ui, sans-serif;
+  --font-heading: 'Montserrat', system-ui, sans-serif;
+
+  /* Shadow */
+  --shadow-primary: 0 10px 30px rgba(255, 106, 0, 0.2);
+}
+
+/* =========================
+   BASE RESET
+========================= */
+*,
+*::before,
+*::after {
+  border-color: var(--border);
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================
+   TEXT SELECTION
+========================= */
+::selection {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+/* =========================
+   HEADINGS (PREMIUM LOOK)
+========================= */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+}
+
+/* =========================
+   SCROLLBAR (CUSTOM)
+========================= */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0D0D0D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2A2A2A;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* =========================
+   BUTTON DEFAULT EFFECT
+========================= */
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  box-shadow: var(--shadow-primary);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   UTILITY COLORS (TAILWIND COMPAT)
+========================= */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-hover: var(--primary-hover);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+
+  --color-gray-light: var(--gray-light);
+
+  --radius: var(--radius);
+
+  --font-sans: var(--font-sans);
+}
